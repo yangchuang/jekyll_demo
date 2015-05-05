@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>南鹤国际物流托管</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 40px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+	.img-circle {
+		width: 240px;
+	}
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 10px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./ico/favicon.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">南鹤国际物流托管</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#myCarousel">首页</a></li>
+                <li><a href="#about">公司简介</a></li>
+                <li><a href="#services">业务范围</a></li>
+                <li><a href="#hr">人才战略</a></li>
+                <li><a href="#responsibility">图片集锦</a></li>
+                <li><a href="#contact">联系我们</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">版本<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                  	<li class="nav-header">分页版本</li>
+                    <li><a href="./index.html">分页首页</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">单页版本</li>
+                    <li><a href="index.html">单页首页</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./img/banner1.jpg" alt="">
+          <!--<div class="container">
+            <div class="carousel-caption">
+              <h1>物融宝</h1>
+              <p class="lead">跨境电商企业全方位解决方案</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>-->
+        </div>
+        <div class="item">
+          <img src="./img/banner2.jpg" alt="">
+          <!--<div class="container">
+            <div class="carousel-caption">
+              <h1>美国仓库</h1>
+              <p class="lead">只收取本地派送费，USPS低至7折起，提供进出口退税解决方案</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>-->
+        </div>
+        <div class="item">
+          <img src="./img/banner3.jpg" alt="">
+          <!--<div class="container">
+            <div class="carousel-caption">
+              <h1>“顺友通”小包，震撼推出。</h1>
+              <p class="lead">智能化渠道选择</p>
+              <p class="lead">根据包裹特性选择最佳物流渠道</p>
+              <p class="lead">最大化提高物流速度，降低物流成本</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src="./img/browser-icon-chrome.png" >
+          <h2>物融宝</h2>
+          <p>跨境电商企业全方位解决方案</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p><a class="btn" href="#">详情 &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="./img/browser-icon-firefox.png" >
+          <h2>美国仓库</h2>
+          <p>只收取本地派送费，USPS低至7折起</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p><a class="btn" href="#">详情 &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="./img/browser-icon-safari.png" >
+          <h2>顺友通</h2>
+          <p>智能化渠道选择</p>
+          <p>根据包裹特性选择最佳物流渠道</p>
+          <p>最大化提高物流速度，降低物流成本</p>
+          <p><a class="btn" href="#">详情 &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+      <hr id="about" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading">公司简介</h2>
+	        </div>
+	        <div class="span9">
+	          	<p>深圳市顺友物流有限公司成立于2008年，系前海股权交易中心挂牌企业，深圳市跨境电子商务协会副会长单位。</p>
+		 		<p>&nbsp;</p>
+				<p>其业务范围包括顺邮宝专线、各国邮政小包、全球速递以及全球仓储及订单处理服务，在深圳、香港、洛杉矶、悉尼等地拥有超过10000平米的包裹处理及仓储中心，日均处理国际包裹达数十万件，累计服务超过10000家跨境电商企业，讲诚信、重服务是顺友不变的态度。</p>
+				<p>&nbsp;</p>
+				<p>我们通过提供高效、快捷、可靠的物流服务，创新的物流金融产品，成为跨境电商物流行业的标杆企业。</p>
+				<p>&nbsp;</p>
+				<p>主要业务包括：</p>
+				<p>顺邮宝专线：专线直达俄罗斯、美国、德国等十几个主要国家</p>
+				<p>中国邮政：合作项目包括国际航空小包(全球)、国际特快专递、国际E邮宝等</p>
+				<p>香港邮政：合作项目包括国际航空小包(全球)、空海运包裹、特快专递、万用箱等</p>
+				<p>瑞士邮政：合作项目包括国际航空小包(全球)等</p>
+				<p>德国邮政：合作项目包括国际航空小包(德国)等</p>
+				<p>马来西亚邮政：合作项目包括国际航空小包(全球)、国际特快专递等</p>
+				<p>俄罗斯邮政：合作项目包括国际航空小包(俄罗斯)等</p>
+				<p>皇家邮政：合作项目包括国际航空小包(英国)等</p>
+				<p>全球速递：DHL、UPS、TNT、FedEx</p>
+				<p>仓储服务：深圳仓储、香港仓储、英国仓储、美国仓储、澳洲仓储等</p>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+      <hr id="services" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span9">
+	        	<div class="tabbable tabs-left">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#lA" data-toggle="tab">顺友宝专线</a></li>
+						<li class=""><a href="#lB" data-toggle="tab">顺友通小包</a></li>
+						<li class=""><a href="#lC" data-toggle="tab">中英专线</a></li>
+						<li class=""><a href="#vedio" data-toggle="tab">视频介绍</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="lA">
+							<p>服务名称：顺邮宝专线(限时未到运费全免)</p>
+							<p>服务代码：平邮SYBAM、挂号SYBRAM</p>
+							<p>递送范围：澳大利亚、美国、加拿大、俄罗斯、英国、法国、德国、荷兰、西班牙、巴西、马来西亚</p>
+							<p>&nbsp;</p>
+							<p>服务优势：</p>
+							<p>1.费用低廉，以克为计费单位，无处理费；</p>
+							<p>2.平邮挂号均提供上网查询，平邮可追踪至目的国清关；</p>
+							<p>3.直飞目的地国家，时效稳定；</p>
+							<p>4.可投寄内置锂电池产品。</p>
+							<p>&nbsp;</p>
+							<p>服务简介：</p>
+							<p>顺邮宝是顺友物流专为电商卖家开发的专线产品，速度快、时效稳定，平邮亦可追踪至目的国清关，从收寄到目的国只需2-4天，是目前eBay、Aliexpress、Amazon、Wish、Lazada卖家主要选择的物流服务之一。</p>
+							<p>&nbsp;</p>
+							<p>参考时效 7-20天</p>
+							<p>价格资费 使用价格查询功能计算或向销售人员索取报价单</p>
+							<p>重量限制 不超过2公斤</p>
+							<p>体积限制 长+宽+高≤90cm，单边长≤60cm</p>
+							<p>跟踪查询 提供在线查询</p>
+							<p>保险理赔 不提供保险</p>
+							<p>清关关税 不产生关税及清关费用</p>
+							<p>退件服务 提供</p>
+							<p>禁寄物品 纯电池、液体、粉末、药品、武器（包括玩具枪）、打火机等</p>
+
+						</div>
+						<div class="tab-pane" id="lB">
+							<p>顺友宝小包介绍</p>
+						</div>
+						<div class="tab-pane" id="lC">
+							<p>中英专线介绍</p>
+						</div>
+						<div class="tab-pane" id="vedio">
+							<p>视频链接</p>
+						</div>
+					</div>
+				</div>
+	        </div>
+	        <div class="span3">
+	          <h2 class="featurette-heading">业务范围</h2>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+      <hr id="hr" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading">人才战略</h2>
+	        </div>
+	        <div class="span9">
+	          <img src="./img/rczl.jpg" >
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+      <hr id="responsibility" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span9">
+	          	<img src="./img/rczl.jpg" >
+	        </div>
+	        <div class="span3">
+	          <h2 class="featurette-heading">图片集锦</h2>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+	  <hr id="contact" class="featurette-divider">
+      <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading">联系我们</h2>
+	        </div>
+	        <div class="span9">
+				<p>深圳总公司：</p>
+				<p>地址：深圳市龙岗区坂田街道新河街8号金禾大厦1楼(地铁坂田站B出口)</p>
+				<p>电话：0755-3691-5222 传真：0755-8376-6626</p>
+				<p>财务：0755-3652-1155 投诉：0755-3284-7888</p>
+				<p>业务：向先生18676681487、QQ：2851530301；支先生13632951997、QQ：2851530305</p>
+				<p>操作：殷先生13914705000、QQ：2851530303；汪小姐18820966876、QQ：2850181456</p>
+				<p>司机取货：18820966871 18820966872 18820966873</p>
+				<p>工作时间：周一至周五10:00-24:00 周日12:00-20:00 周六休息</p>
+				<p>&nbsp;</p> 
+				<p>香港分公司：</p>
+				<p>地址：香港九龙官塘道436-484号官塘工业大厦第四期5楼(地铁官塘站D出口)</p>
+				<p>电话：+(852)8192-4567 传真：+(852)2712-6333</p>
+				<p> &nbsp;</p>
+				<p>洛杉矶分公司：</p>
+				<p>地址：4061 FILHURST AVE BALDWIN PARK CA 91706</p>
+				<p>电话：+1(909)297-1888</p>
+				<p> &nbsp;</p>
+				<p>广州分公司：</p>
+				<p>地址：广州市白云区白云大道南荔园北路4号之三(地铁萧岗站A出口)</p>
+				<p>电话：020-29036376 136-3242-6510</p>
+				<p> &nbsp;</p>
+				<p>番禺分部：</p>
+				<p>地址：广州市番禺区市桥光明北路366号(公交鸣翠园站)</p>
+				<p>电话：020-62277901</p>
+				<p> &nbsp;</p>
+				<p>义乌分部：</p>
+				<p>地址：浙江省义乌市后富小区58幢一层</p>
+				<p>电话：18267094077</p>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+	  <hr>
+      <!-- FOOTER -->
+      <footer class="text-center">
+        <p class="pull-right"><a href="#">返回顶部</a></p>
+        <p>&copy; 2015 Skyline Inc. All Rights Reserved. 深圳南鹤国际物流托管公司 版权所有</p>
+        <p>合作伙伴：
+        	<a href="#">顺丰</a><span> | </span>
+        	<a href="#">中通</a><span> | </span>
+        	<a href="#">申通</a><span> | </span>
+        	<a href="#">圆通</a><span> | </span>
+        	<a href="#">韵达</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+	
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
